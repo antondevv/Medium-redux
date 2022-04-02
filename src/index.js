@@ -1,17 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+
+import store from "./redux/store";
+import { Provider } from "react-redux";
+// import { createStore } from "redux";
+
+// // Actions
+// const increment = () => {
+//   return {
+//     type: "INCREMENT",
+//   };
+// };
+
+// const decrement = () => {
+//   return {
+//     type: "DECREMENT",
+//   };
+// };
+
+// // Reducers
+// const counter = (state = 0, action) => {
+//   if (action.type === "INCREMENT") return state + 1;
+//   if (action.type === "DECREMENT") return state - 1;
+// };
+
+// // Store
+// let store = createStore(counter);
+
+// store.dispatch(increment());
+// console.log(store.getState());
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Provider>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

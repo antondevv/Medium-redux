@@ -1,6 +1,9 @@
 # Demo Redux app
 
-```cd Medium-redux
+```
+cd Medium-redux
 npm i
-npm run start```
-Runs the app in the development mode.\
+npm run start
+```
+### Link for Tutorial:
+https://medium.com/p/3b5d63b18be9
